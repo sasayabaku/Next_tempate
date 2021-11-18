@@ -1,9 +1,9 @@
 import React from 'react';
 
-import AppsIcon from '@material-ui/icons/Apps';
-import CropLandscapeIcon from '@material-ui/icons/CropLandscape';
-import DashboardIcon from '@material-ui/icons/Dashboard';
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import AppsIcon from '@mui/icons-material/Apps';
+import CropLandscapeIcon from '@mui/icons-material/CropLandscape';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 const Header = () => {
   return (

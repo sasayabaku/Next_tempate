@@ -14,9 +14,10 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.2",
-    "@material-ui/icons": "^4.11.2",
-    "@types/material-ui": "^0.21.12",
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.1.1",
+    "@mui/material": "^5.1.1",
     "classnames": "^2.3.1",
     "lottie-react-web": "^2.2.2",
     "lottie-web": "^5.8.1",
