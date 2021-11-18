@@ -2,6 +2,26 @@ import React from 'react';
 
 import ClearAllIcon from '@mui/icons-material/ClearAll';
 import DonutLargeIcon from '@mui/icons-material/DonutLarge';
+import { useRouter } from 'next/router';
+
+type Props = {
+  href: string;
+};
+
+const Link: React.FC<Props> = ({ children, href }) => {
+  const router = useRouter();
+  return (
+    <a
+      href="#"
+      onClick={(e) => {
+        e.preventDefault();
+        router.push(href);
+      }}
+    >
+      {children}
+    </a>
+  );
+};
 
 const Sidebar = () => {
   return (
@@ -15,31 +35,39 @@ const Sidebar = () => {
           <h1 className="text-gray-600">Menu</h1>
 
           <div className="">
-            <div className="flex p-3 text-gray-700 space-x-4 0 hover:bg-gray-50 hover:text-blue-600 cursor-pointer">
-              <DonutLargeIcon className="text-gray-400" />
-              <p className=" ">Dashboard</p>
-            </div>
+            <Link href="/">
+              <div className="flex p-3 text-gray-700 space-x-4 0 hover:bg-gray-50 hover:text-blue-600 cursor-pointer">
+                <DonutLargeIcon className="text-gray-400" />
+                <p className=" ">Dashboard</p>
+              </div>
+            </Link>
           </div>
 
           <div className="">
-            <div className="flex p-3 text-gray-700 space-x-4 0 hover:bg-gray-50 hover:text-red-500 cursor-pointer">
-              <ClearAllIcon className="text-gray-400" />
-              <p className=" ">Transaction</p>
-            </div>
+            <Link href="/asana">
+              <div className="flex p-3 text-gray-700 space-x-4 0 hover:bg-gray-50 hover:text-red-500 cursor-pointer">
+                <ClearAllIcon className="text-gray-400" />
+                <p className=" ">Todo List</p>
+              </div>
+            </Link>
           </div>
 
           <div className="">
-            <div className="flex p-3 text-gray-700 space-x-4 0 hover:bg-gray-50 hover:text-yellow-400 cursor-pointer">
-              <ClearAllIcon className="text-gray-400" />
-              <p className=" ">Send</p>
-            </div>
+            <Link href="/gallery">
+              <div className="flex p-3 text-gray-700 space-x-4 0 hover:bg-gray-50 hover:text-yellow-400 cursor-pointer">
+                <ClearAllIcon className="text-gray-400" />
+                <p className=" ">Gallery</p>
+              </div>
+            </Link>
           </div>
 
           <div className="">
-            <div className="flex p-3 text-gray-700 space-x-4 0 hover:bg-gray-50 hover:text-green-400 cursor-pointer">
-              <ClearAllIcon className="text-gray-400" />
-              <p className=" ">Transaction</p>
-            </div>
+            <Link href="/slide">
+              <div className="flex p-3 text-gray-700 space-x-4 0 hover:bg-gray-50 hover:text-green-400 cursor-pointer">
+                <ClearAllIcon className="text-gray-400" />
+                <p className=" ">Slide</p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
