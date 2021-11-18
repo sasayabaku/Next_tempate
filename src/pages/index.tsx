@@ -1,4 +1,4 @@
-import { Checkbox } from '@material-ui/core';
+import Checkbox from '@mui/material/Checkbox';
 
 import Header from '../components/Header';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ClearAllIcon from '@material-ui/icons/ClearAll';
-import DonutLargeIcon from '@material-ui/icons/DonutLarge';
+import ClearAllIcon from '@mui/icons-material/ClearAll';
+import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 
 const Sidebar = () => {
   return (
