@@ -1,7 +1,9 @@
 import React from 'react';
 
-import ClearAllIcon from '@mui/icons-material/ClearAll';
 import DonutLargeIcon from '@mui/icons-material/DonutLarge';
+import LibraryAddCheckIcon from '@mui/icons-material/LibraryAddCheck';
+import PieChartIcon from '@mui/icons-material/PieChart';
+import SlideshowIcon from '@mui/icons-material/Slideshow';
 import { useRouter } from 'next/router';
 
 type Props = {
@@ -37,7 +39,7 @@ const Sidebar = () => {
           <div className="">
             <Link href="/">
               <div className="flex p-3 text-gray-700 space-x-4 0 hover:bg-gray-50 hover:text-blue-600 cursor-pointer">
-                <DonutLargeIcon className="text-gray-400" />
+                <DonutLargeIcon className="text-gray-500" />
                 <p className=" ">Dashboard</p>
               </div>
             </Link>
@@ -46,7 +48,7 @@ const Sidebar = () => {
           <div className="">
             <Link href="/asana">
               <div className="flex p-3 text-gray-700 space-x-4 0 hover:bg-gray-50 hover:text-red-500 cursor-pointer">
-                <ClearAllIcon className="text-gray-400" />
+                <LibraryAddCheckIcon className="text-gray-500" />
                 <p className=" ">Todo List</p>
               </div>
             </Link>
@@ -55,7 +57,7 @@ const Sidebar = () => {
           <div className="">
             <Link href="/gallery">
               <div className="flex p-3 text-gray-700 space-x-4 0 hover:bg-gray-50 hover:text-yellow-400 cursor-pointer">
-                <ClearAllIcon className="text-gray-400" />
+                <PieChartIcon className="text-gray-500" />
                 <p className=" ">Gallery</p>
               </div>
             </Link>
@@ -64,7 +66,7 @@ const Sidebar = () => {
           <div className="">
             <Link href="/slide">
               <div className="flex p-3 text-gray-700 space-x-4 0 hover:bg-gray-50 hover:text-green-400 cursor-pointer">
-                <ClearAllIcon className="text-gray-400" />
+                <SlideshowIcon className="text-gray-500" />
                 <p className=" ">Slide</p>
               </div>
             </Link>
